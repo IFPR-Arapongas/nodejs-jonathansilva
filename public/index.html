@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas - Login/Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+    </header>
+
+    <main class="container">
+        <div id="message-area" class="alert hidden"></div>
+
+        <section id="login-section">
+            <h2>Fazer Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Seu E-mail" required>
+                <input type="password" id="login-password" placeholder="Sua Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Ainda não tem conta? <a href="#" id="show-register">Cadastre-se</a></p>
+        </section>
+
+        <section id="register-section" class="hidden">
+            <h2>Criar Conta</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Seu Nome" required>
+                <input type="email" id="register-email" placeholder="Seu E-mail" required>
+                <input type="password" id="register-password" placeholder="Crie uma Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p>Já tem uma conta? <a href="#" id="show-login">Fazer Login</a></p>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

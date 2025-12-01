@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Minhas Tarefas</h1>
+        <button id="logout-button">Sair</button>
+    </header>
+
+    <main class="container">
+        <div id="message-area" class="alert hidden"></div>
+
+        <section id="task-form-section">
+            <h2>Adicionar Nova Tarefa</h2>
+            <form id="task-form">
+                <input type="hidden" id="task-id">
+                <input type="text" id="task-title" placeholder="Título da Tarefa" required>
+                <textarea id="task-description" placeholder="Descrição (opcional)"></textarea>
+                <select id="task-status">
+                    <option value="A fazer">A fazer</option>
+                    <option value="Em andamento">Em andamento</option>
+                    <option value="Concluída">Concluída</option>
+                </select>
+                <button type="submit" id="submit-task-button">Criar Tarefa</button>
+            </form>
+        </section>
+
+        <section id="task-list-section">
+            <h2>Tarefas Atuais</h2>
+            <div id="tasks-container">
+                <p id="loading-tasks">Carregando tarefas...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
