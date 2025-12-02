@@ -138,3 +138,18 @@ button:hover {
 #logout-button:hover {
     background-color: #c82333;
 }
+
+/* Adicione este bloco no final do seu style.css */
+.toggle-btn {
+    cursor: pointer;
+    color: #007bff; /* Cor azul de link/ação */
+    font-weight: bold;
+    text-decoration: underline; /* Para indicar que é clicável */
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+
+.toggle-btn:hover {
+    color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
